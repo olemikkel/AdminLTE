@@ -142,9 +142,9 @@ $(function () {
     APIstring += "&querytype=" + GETDict.querytype;
   } else if ("forwarddest" in GETDict) {
     APIstring += "&forwarddest=" + GETDict.forwarddest;
-  }
-  // If we don't ask filtering and also not for all queries, just request the most recent 100 queries
-  else if (!("all" in GETDict)) {
+  // If we don't ask for filtering and also not for all queries,
+  // just request the most recent 100 queries
+  } else if (!("all" in GETDict)) {
     APIstring += "=100";
   }
 
@@ -174,11 +174,11 @@ $(function () {
       }
 
       // Query status
-      var fieldtext,
-        buttontext,
-        colorClass = false,
-        isCNAME = false,
-        regexLink = false;
+      var fieldtext;
+      var buttontext;
+      var colorClass = false;
+      var isCNAME = false;
+      var regexLink = false;
 
       switch (data[4]) {
         case "1":
@@ -307,8 +307,8 @@ $(function () {
       }
 
       // Check for existence of sixth column and display only if not Pi-holed
-      var replytext,
-        replyid = data[5];
+      var replytext;
+      var replyid = data[5];
 
       if (replyid >= 0 && replyid < replyTypes.length) {
         replytext = replyTypes[replyid];
