@@ -46,7 +46,7 @@
             {
                 $auth = true;
                 // Refresh cookie with new expiry
-                setcookie('persistentlogin', $pwhash, time()+60*60*24*7);
+                setcookie('persistentlogin', $pwhash, time()+60*60*24*365);
             }
             else
             {
@@ -68,7 +68,7 @@
                     // Set persistent cookie if selected
                     if (isset($_POST['persistentlogin']))
                     {
-                        setcookie('persistentlogin', $pwhash, time()+60*60*24*7);
+                        setcookie('persistentlogin', $pwhash, time()+60*60*24*365);
                     }
                     header('Location: index.php');
                     exit();

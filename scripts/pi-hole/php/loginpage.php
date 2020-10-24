@@ -41,7 +41,7 @@
               <div class="pull-right">
                 <div>
                   <input type="checkbox" id="logincookie" name="persistentlogin">
-                  <label for="logincookie">Remember me for 7 days</label>
+                  <label for="logincookie">Remember me for 1 year</label>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary pull-right"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Log in</button>
